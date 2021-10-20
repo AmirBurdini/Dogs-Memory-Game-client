@@ -1,0 +1,19 @@
+<h1>Welcome to the Dog Memory Game</h1>
+<h3>We All love Games and Dogs, so we combined them together!</h3>
+
+<h3>New Game</h3>
+
+<div>
+  <select name="boardsize" id="boardsize">
+    <option value="2">2X2</option>
+    <option value="4">4X4</option>
+    <option value="6">6X6</option>
+</select>
+</div>
+<br>
+<div>
+  <input id="name" type="text" placeholder="enter player name" (change)="getName($event.target)">
+</div>
+<br>
+<button (click)="startGame()">Start</button>
+
